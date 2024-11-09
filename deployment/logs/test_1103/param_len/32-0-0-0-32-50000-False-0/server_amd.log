@@ -1,0 +1,15 @@
+11/05/2024 01:40:56 AM - INFO - AMD server: generate rsa key
+Server: connect to SGX server
+Server: listen to clients
+Server: send eid to SGX server
+Server: receive eid_bc from SGX server
+Server: write public key
+Server: send pubkey to SGX server
+Server: receive commit message from SGX server
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_verifier.cpp(68): oe_verify_evidence succeeded
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_verifier.cpp(197): attestation succeeded
+Server: start computing
+Server: send and receive parameters to group members
+
+11/05/2024 01:40:56 AM - ERROR - /home/azureuser/prot_mpc/amd_server/server.cpp:313: Check PER_SECAGG_CLIENT_BUF_SIZE >= 1 + ParamType::size() failed.
+

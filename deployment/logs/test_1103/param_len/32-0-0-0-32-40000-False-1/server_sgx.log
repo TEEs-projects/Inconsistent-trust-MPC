@@ -1,0 +1,53 @@
+11/05/2024 01:28:35 AM - INFO - Enclave: /home/azureuser/prot_mpc/sgx_server/prog_bc/prog_bc.cpp(43): prog_bc: initialize and read client public keys
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(45): prog_mpc: generate rsa key
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(58): prog_mpc: initialize and read client public keys
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(215): prog_mpc: write public key
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(225): prog_mpc: generate evidence for public key
+Host: listen to AMD server
+Host: listen to clients
+Host: create enclave for image:./prog_bc/prog_bc.signed
+Host: create enclave for image:./prog_mpc/prog_mpc.signed
+Host: initialize enclaves
+Host: receive eid of AMD server
+Host: get eid_bc from prog_bc
+Host: get eid_bc 0x55F11C51C958C0DB093BC44315773768
+Host: send eid_bc to clients
+Host: send eid_bc to AMD server
+Host: prog_bc setup
+Host: setup public key from SGX enclave
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_generator.cpp(131): generate_attestation_evidence succeeded.
+Host: setup SGX public key
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_verifier.cpp(68): oe_verify_evidence succeeded
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_verifier.cpp(197): attestation succeeded
+Hose: receive AMD pubkey from AMD server
+Host: get commit message from prog_bc
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_generator.cpp(131): generate_attestation_evidence succeeded.
+Host: send commit message to clients
+Host: send commit message to AMD server
+Host: setup commit message for prog_mpc enclave
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_verifier.cpp(68): oe_verify_evidence succeeded
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_verifier.cpp(197): attestation succeeded
+370085 320000
+2024-11-04T17:28:07+0000.487780Z [(H)ERROR] tid(0x7f1a97daf140) | Backtrace:
+2024-11-04T17:28:07+0000.491812Z [(H)ERROR] tid(0x7f1a97daf140) | oe_abort_with_td(): 0x7f1a7820d81f
+2024-11-04T17:28:07+0000.491816Z [(H)ERROR] tid(0x7f1a97daf140) | oe_abort(): 0x7f1a7820c682
+2024-11-04T17:28:07+0000.491817Z [(H)ERROR] tid(0x7f1a97daf140) | abort(): 0x7f1a781e22a9
+2024-11-04T17:28:07+0000.491818Z [(H)ERROR] tid(0x7f1a97daf140) | _ZL14report_failure19_Unwind_Reason_CodePN10__cxxabiv115__cxa_exceptionE(): 0x7f1a7816674b
+2024-11-04T17:28:07+0000.491818Z [(H)ERROR] tid(0x7f1a97daf140) | _Znwm(): 0x7f1a7814f782
+2024-11-04T17:28:07+0000.491819Z [(H)ERROR] tid(0x7f1a97daf140) | _ZNSt3__117__libcpp_allocateEmm(): 0x7f1a78043542
+2024-11-04T17:28:07+0000.491820Z [(H)ERROR] tid(0x7f1a97daf140) | _ZNSt3__19allocatorI9ParameterI2ZpILy1000000007EELm40000EEE8allocateEmPKv(): 0x7f1a780494af
+2024-11-04T17:28:07+0000.491821Z [(H)ERROR] tid(0x7f1a97daf140) | _ZNSt3__116allocator_traitsINS_9allocatorI9ParameterI2ZpILy1000000007EELm40000EEEEE8allocateERS6_m(): 0x7f1a78048f88
+2024-11-04T17:28:07+0000.491821Z [(H)ERROR] tid(0x7f1a97daf140) | _ZNSt3__16vectorI9ParameterI2ZpILy1000000007EELm40000EENS_9allocatorIS4_EEE11__vallocateEm(): 0x7f1a7804885d
+2024-11-04T17:28:07+0000.491822Z [(H)ERROR] tid(0x7f1a97daf140) | _ZNSt3__16vectorI9ParameterI2ZpILy1000000007EELm40000EENS_9allocatorIS4_EEEC2ERKS7_(): 0x7f1a7804aa39
+2024-11-04T17:28:07+0000.491823Z [(H)ERROR] tid(0x7f1a97daf140) | _ZN10PolynomialI2ZpILy1000000007EE9ParameterIS1_Lm40000EEEC2ERKNSt3__16vectorIS3_NS5_9allocatorIS3_EEEE(): 0x7f1a78048006
+2024-11-04T17:28:07+0000.491823Z [(H)ERROR] tid(0x7f1a97daf140) | _ZN6ClientC2EmRK9ParameterI2ZpILy1000000007EELm40000EERK12SecaggConfig(): 0x7f1a7803d819
+2024-11-04T17:28:07+0000.491824Z [(H)ERROR] tid(0x7f1a97daf140) | _ZN17ProgHybridHandler13get_params_toEmPhm(): 0x7f1a7803c431
+2024-11-04T17:28:07+0000.491825Z [(H)ERROR] tid(0x7f1a97daf140) | get_params_to(): 0x7f1a78032408
+2024-11-04T17:28:07+0000.491826Z [(H)ERROR] tid(0x7f1a97daf140) | ecall_get_params_to(): 0x7f1a78057b08
+2024-11-04T17:28:07+0000.491826Z [(H)ERROR] tid(0x7f1a97daf140) | oe_handle_call_enclave_function(): 0x7f1a7820bda0
+2024-11-04T17:28:07+0000.491827Z [(H)ERROR] tid(0x7f1a97daf140) | _handle_ecall(): 0x7f1a7820de2b
+2024-11-04T17:28:07+0000.491828Z [(H)ERROR] tid(0x7f1a97daf140) | oe_enter(): 0x7f1a7820eb59
+2024-11-04T17:28:07+0000.491855Z [(H)ERROR] tid(0x7f1a97daf140) | :OE_ENCLAVE_ABORTING [/source/openenclave/host/calls.c:_call_enclave_function_impl:56]
+
+11/05/2024 01:28:35 AM - ERROR - /home/azureuser/prot_mpc/sgx_server/host/host.cpp:371: Check ret == OE_OK && ret_ecall == MY_ECALL_SUCCESS failed.
+

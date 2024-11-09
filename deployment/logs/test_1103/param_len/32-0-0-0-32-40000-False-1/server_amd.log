@@ -1,0 +1,12 @@
+11/05/2024 01:28:38 AM - INFO - AMD server: generate rsa key
+Server: connect to SGX server
+Server: listen to clients
+Server: send eid to SGX server
+Server: receive eid_bc from SGX server
+Server: write public key
+Server: send pubkey to SGX server
+Server: receive commit message from SGX server
+
+11/05/2024 01:28:38 AM - ERROR - terminate called after throwing an instance of 'std::system_error'
+  what():  write: Broken pipe
+

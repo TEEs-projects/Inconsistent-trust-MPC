@@ -1,0 +1,48 @@
+11/05/2024 01:08:55 AM - INFO - AMD server: generate rsa key
+Server: connect to SGX server
+Server: listen to clients
+Server: send eid to SGX server
+Server: receive eid_bc from SGX server
+Server: write public key
+Server: send pubkey to SGX server
+Server: receive commit message from SGX server
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_verifier.cpp(68): oe_verify_evidence succeeded
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_verifier.cpp(197): attestation succeeded
+Server: receive input from client 6
+Server: receive input from client 7
+Server: receive input from client 16
+Server: receive input from client 17
+Server: receive input from client 5
+Server: receive input from client 18
+Server: receive input from client 4
+Server: receive input from client 3
+Server: receive input from client 2
+Server: receive input from client 19
+Server: receive input from client 20
+Server: receive input from client 21
+Server: receive input from client 22
+Server: receive input from client 23
+Server: receive input from client 1
+Server: receive input from client 0
+client_id: 21, trust: 3
+client_id: 17, trust: 3
+client_id: 1, trust: 1
+client_id: 5, trust: 1
+client_id: 19, trust: 3
+client_id: 23, trust: 3
+client_id: 7, trust: 1
+client_id: 3, trust: 1
+client_id: 20, trust: 3
+client_id: 16, trust: 3
+client_id: 4, trust: 1
+client_id: 18, trust: 3
+client_id: 0, trust: 1
+client_id: 22, trust: 3
+client_id: 6, trust: 1
+client_id: 2, trust: 1
+Server: start computing
+Server: send and receive parameters to group members
+Server: send parameters to the next group member
+Server: Test complete. Elapsed: 5235ms.
+
+11/05/2024 01:08:55 AM - ERROR - 

@@ -1,0 +1,26 @@
+{
+    "client": {
+        "n_prot_mpc_client": 16,
+        "n_partial_trust": 2,
+        "n_complete_trust_on_SGX": 2,
+        "n_complete_trust_on_AMD": 2,
+        "ip": [
+        ]
+    },
+    "server": {
+        "sgx": {
+            "ip": "127.0.0.1"
+        },
+        "amd": {
+            "ip": "127.0.0.1"
+        }
+    },
+    "build": {
+        "secagg_test": true,
+        "prot_mpc_test": false,
+        "ndebug": true
+    },
+    "parameter": {
+        "length": 20000
+    }
+}

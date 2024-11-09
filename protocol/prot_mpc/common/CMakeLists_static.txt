@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.16)
+
+include_directories(${CMAKE_SOURCE_DIR}/common/)
+
+set(CMAKE_C_COMPILER clang-11)
+set(CMAKE_CXX_COMPILER clang++-11)
+
+set(CMAKE_CXX_STANDARD 11)
+
+project("Test MbedTLS")
+
+find_package(MbedTLS REQUIRED)
+
+add_executable(key_gen key_gen.cpp)
+target_link_libraries(key_gen MbedTLS::mbedtls MbedTLS::mbedcrypto)
+
+add_executable(test_symkey test_symkey.cpp)
+target_link_libraries(test_symkey MbedTLS::mbedtls MbedTLS::mbedcrypto)
+
+add_executable(try_rsa try_rsa.cpp)
+target_link_libraries(try_rsa MbedTLS::mbedtls MbedTLS::mbedcrypto)

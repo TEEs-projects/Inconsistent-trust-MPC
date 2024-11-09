@@ -1,0 +1,1 @@
+using FieldType = Zp<1000000007>;                 using ParamType = Parameter<FieldType, 20000>;                 using PolynomialType = Polynomial<FieldType, ParamType>;                 static inline FieldType at(size_t id_in_group) {                    return FieldType(id_in_group + 1);                }

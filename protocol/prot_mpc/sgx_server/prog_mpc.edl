@@ -1,0 +1,68 @@
+// Copyright (c) Open Enclave SDK contributors.
+// Licensed under the MIT License.
+
+enclave {
+    from "openenclave/edl/syscall.edl" import *;
+    from "platform.edl" import *;
+
+    trusted {
+        public int get_prog_mpc_eid(
+            [out, count=ret_buf_len] uint8_t *ret_buf,
+            size_t ret_buf_len);
+
+        public int prog_mpc_load_config(
+            size_t n_prot_mpc_client,
+            [in, count=pubkeys_len] uint8_t *pubkeys,
+            size_t pubkeys_len
+        );
+
+        public int get_random_polynomial_for_test(
+            [out, count=ret_buf_len] uint8_t *ret_buf,
+            size_t *ret_len,
+            size_t ret_buf_len
+        );
+
+        public int get_params_to(
+            size_t id_in_group,
+            [out, count=param_len] uint8_t *param,
+            size_t param_len
+        );
+
+        public int set_params_from(
+            size_t id_in_group,
+            [in, count=param_len] uint8_t *param,
+            size_t param_len
+        );
+
+        public int key_gen(
+            [out, count=pubkey_buf_len] uint8_t *pubkey_buf,
+            [out] size_t *pubkey_len,
+            size_t pubkey_buf_len,
+            [out, count=evidence_buf_len] uint8_t *evidence_buf,
+            [out] size_t *evidence_len,
+            size_t evidence_buf_len
+        );
+
+        public int setup_input(
+            [in, count=input_len] uint8_t *input,
+            size_t input_len,
+            [in, count=sig_len] uint8_t *sig,
+            size_t sig_len
+        );
+
+        public int setup_commit_msg(
+            [in, count=msg_len] uint8_t *commit_msg,
+            size_t msg_len,
+            [in, count=evidence_len] uint8_t *evidence,
+            size_t evidence_len
+        );
+
+        public int test_attestation(
+            [out, count=out_buf_len] uint8_t *out_buf,
+            size_t out_buf_len,
+            [out, count=evidence_buf_len] uint8_t *evidence_buf,
+            [out] size_t *evidence_len,
+            size_t evidence_buf_len
+        );
+    };
+};

@@ -1,0 +1,73 @@
+11/03/2024 22:11:40 PM - INFO - Enclave: /home/azureuser/prot_mpc/sgx_server/prog_bc/prog_bc.cpp(43): prog_bc: initialize and read client public keys
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(45): prog_mpc: generate rsa key
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(58): prog_mpc: initialize and read client public keys
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(215): prog_mpc: write public key
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(225): prog_mpc: generate evidence for public key
+Host: listen to AMD server
+Host: listen to clients
+Host: accept client connection with id 0
+Host: accept client connection with id 1
+Host: accept client connection with id 2
+Host: accept client connection with id 3
+Host: accept client connection with id 4
+Host: accept client connection with id 5
+Host: accept client connection with id 6
+Host: accept client connection with id 7
+Host: accept client connection with id 8
+Host: accept client connection with id 9
+Host: accept client connection with id 11
+Host: accept client connection with id 10
+Host: accept client connection with id 12
+Host: accept client connection with id 13
+Host: accept client connection with id 14
+Host: accept client connection with id 15
+Host: accept client connection with id 16
+Host: accept client connection with id 17
+Host: accept client connection with id 18
+Host: accept client connection with id 19
+Host: accept client connection with id 20
+Host: accept client connection with id 21
+Host: accept client connection with id 22
+Host: accept client connection with id 23
+Host: create enclave for image:./prog_bc/prog_bc.signed
+Host: create enclave for image:./prog_mpc/prog_mpc.signed
+Host: initialize enclaves
+Host: receive eid of AMD server
+Host: get eid_bc from prog_bc
+Host: get eid_bc 0xDDACA5B0A357577A744251A8DCEADF02
+Host: send eid_bc to clients
+Host: send eid_bc to AMD server
+Host: prog_bc setup
+Host: setup public key from SGX enclave
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_generator.cpp(131): generate_attestation_evidence succeeded.
+Host: setup SGX public key
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_verifier.cpp(68): oe_verify_evidence succeeded
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_verifier.cpp(197): attestation succeeded
+Hose: receive AMD pubkey from AMD server
+Host: get commit message from prog_bc
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_generator.cpp(131): generate_attestation_evidence succeeded.
+Host: send commit message to clients
+Host: send commit message to AMD server
+Host: setup commit message for prog_mpc enclave
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_verifier.cpp(68): oe_verify_evidence succeeded
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_verifier.cpp(197): attestation succeeded
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(301): client_id: 0, trust: 1
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(301): client_id: 1, trust: 1
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(301): client_id: 2, trust: 1
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(301): client_id: 3, trust: 1
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(301): client_id: 4, trust: 1
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(301): client_id: 5, trust: 1
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(301): client_id: 6, trust: 2
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(301): client_id: 7, trust: 2
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(301): client_id: 8, trust: 2
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(301): client_id: 9, trust: 2
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(301): client_id: 10, trust: 2
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(148): 10
+Host: send and receive parameters to group members
+Host: set parameters from group members
+Host: send parameters to the next group
+Host: receive parameters from the final group
+Host: broadcast aggregation to all clients
+Host: Test complete. Elapsed: 5305ms.
+
+11/03/2024 22:11:40 PM - ERROR - 

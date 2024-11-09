@@ -1,0 +1,27 @@
+11/04/2024 19:11:13 PM - INFO - init entropy and ctr_drbg
+Load pre-generated key pair
+Load and check public key
+Set public key
+Check public key
+Connect to the server and other clients
+Client: connect to sgx server
+Client: connect to amd server
+Receive eid_bc from the server
+Client: receive eid_bc from sgx server
+Client: received eid_bc 0xAD13995A35A434E8132D94C9FD12DF9A
+Construct and send ack message to the server
+Client: send ack_msg. id: 0, trust: 1
+Sign and send ack message
+Receive and verify commit message from server
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_verifier.cpp(68): oe_verify_evidence succeeded
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_verifier.cpp(197): attestation succeeded
+Client: Total time for committing: 1463ms.
+Client: Total time for comfirming commit message: 1463ms.
+Client: distribute shares of inputs to TEEs
+Client: Total time for sending inputs: 355ms.
+Client: receive aggregation from the server
+Client: Total time for receiving inputs: 507ms.
+Client: Test complete. Total time for aggregation: 6293ms.
+Client: Test complete. Time for keeping active: 1819ms.
+
+11/04/2024 19:11:13 PM - ERROR - 

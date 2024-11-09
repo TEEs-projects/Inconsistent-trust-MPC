@@ -1,0 +1,39 @@
+11/05/2024 00:00:34 AM - INFO - Enclave: /home/azureuser/prot_mpc/sgx_server/prog_bc/prog_bc.cpp(43): prog_bc: initialize and read client public keys
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(45): prog_mpc: generate rsa key
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(58): prog_mpc: initialize and read client public keys
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(215): prog_mpc: write public key
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(225): prog_mpc: generate evidence for public key
+Host: listen to AMD server
+Host: listen to clients
+Host: create enclave for image:./prog_bc/prog_bc.signed
+Host: create enclave for image:./prog_mpc/prog_mpc.signed
+Host: initialize enclaves
+Host: receive eid of AMD server
+Host: get eid_bc from prog_bc
+Host: get eid_bc 0x63C064339ED9150269FDB73EBE74C8AD
+Host: send eid_bc to clients
+Host: send eid_bc to AMD server
+Host: prog_bc setup
+Host: setup public key from SGX enclave
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_generator.cpp(131): generate_attestation_evidence succeeded.
+Host: setup SGX public key
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_verifier.cpp(68): oe_verify_evidence succeeded
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_verifier.cpp(197): attestation succeeded
+Hose: receive AMD pubkey from AMD server
+Host: get commit message from prog_bc
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_generator.cpp(131): generate_attestation_evidence succeeded.
+Host: send commit message to clients
+Host: send commit message to AMD server
+Host: setup commit message for prog_mpc enclave
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_verifier.cpp(68): oe_verify_evidence succeeded
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_verifier.cpp(197): attestation succeeded
+Enclave: /home/azureuser/prot_mpc/sgx_server/prog_mpc/prog_mpc.cpp(148): 34
+370085 9600
+Host: send and receive parameters to group members
+Host: set parameters from group members
+Host: send parameters to the next group
+Host: receive parameters from the final group
+Host: broadcast aggregation to all clients
+Host: Test complete. Elapsed: 8547ms.
+
+11/05/2024 00:00:34 AM - ERROR - 

@@ -1,0 +1,56 @@
+11/03/2024 23:03:51 PM - INFO - AMD server: generate rsa key
+Server: connect to SGX server
+Server: listen to clients
+Server: accept client connection with id 0
+Server: accept client connection with id 1
+Server: accept client connection with id 2
+Server: accept client connection with id 3
+Server: accept client connection with id 4
+Server: accept client connection with id 5
+Server: accept client connection with id 6
+Server: accept client connection with id 7
+Server: accept client connection with id 8
+Server: accept client connection with id 9
+Server: accept client connection with id 10
+Server: accept client connection with id 11
+Server: accept client connection with id 12
+Server: accept client connection with id 13
+Server: accept client connection with id 14
+Server: accept client connection with id 15
+Server: accept client connection with id 16
+Server: accept client connection with id 17
+Server: accept client connection with id 18
+Server: accept client connection with id 19
+Server: accept client connection with id 20
+Server: accept client connection with id 21
+Server: accept client connection with id 22
+Server: accept client connection with id 23
+Server: accept client connection with id 24
+Server: accept client connection with id 25
+Server: accept client connection with id 26
+Server: accept client connection with id 27
+Server: accept client connection with id 28
+Server: accept client connection with id 29
+Server: accept client connection with id 30
+Server: accept client connection with id 31
+Server: send eid to SGX server
+Server: receive eid_bc from SGX server
+Server: write public key
+Server: send pubkey to SGX server
+Server: receive commit message from SGX server
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_verifier.cpp(68): oe_verify_evidence succeeded
+Enclave: /home/azureuser/prot_mpc/common/evidence/evidence_verifier.cpp(197): attestation succeeded
+Server: receive input from client 5
+Server: receive input from client 4
+Server: receive input from client 1
+Server: receive input from client 0
+client_id: 5, trust: 3
+client_id: 1, trust: 1
+client_id: 4, trust: 3
+client_id: 0, trust: 1
+Server: start computing
+Server: send and receive parameters to group members
+Server: send parameters to the next group member
+Server: Test complete. Elapsed: 10243ms.
+
+11/03/2024 23:03:51 PM - ERROR - 

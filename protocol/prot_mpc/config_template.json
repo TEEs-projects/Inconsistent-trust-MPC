@@ -1,0 +1,22 @@
+{
+    "config": {
+        "client": {
+            "n_prot_mpc_client": 2,
+            "n_partial_trust": 0,
+            "n_complete_trust_on_SGX": 1,
+            "n_complete_trust_on_AMD": 1,
+            "ip": [
+                "127.0.0.1",
+                "127.0.0.1"
+            ]
+        },
+        "server": {
+            "sgx": {
+                "ip": "127.0.0.1"
+            },
+            "amd": {
+                "ip": "127.0.0.1"
+            }
+        }
+    }
+}
